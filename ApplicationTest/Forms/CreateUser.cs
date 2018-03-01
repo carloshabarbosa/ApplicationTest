@@ -1,14 +1,16 @@
 ﻿using ApplicationTeste.Service.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest.Forms
 {
+    /// <summary>
+    /// Class responsible for build the form that create an user
+    /// </summary>
     public class CreateUser : BaseForm
     {
+        /// <summary>
+        /// Implementation of the abstract class for the form that creates an user
+        /// </summary>
         public override void BuildForm()
         {
             base.BuildForm();
@@ -25,16 +27,9 @@ namespace ApplicationTest.Forms
                 decimal initialBalance = 0;
                 decimal.TryParse(Console.ReadLine().ToString(), out initialBalance);
 
-                try
-                {
-                    UserService.Instance.CreateUser(userName, initialBalance);
-                    Console.WriteLine("User created successfully\n");
-                    showForm = false;
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("Error on create user\n");
-                }
+                UserService.Instance.CreateUser(userName, initialBalance);
+                Console.WriteLine("User created successfully\n");
+                showForm = false;
             }
 
             FooterForm();

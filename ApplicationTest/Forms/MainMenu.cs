@@ -1,13 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest.Forms
 {
+    /// <summary>
+    /// Class responsible for build the main menu form
+    /// </summary>
     public class MainMenu : BaseForm
     {
+        /// <summary>
+        /// Implementation of the abstract class for the main menu form
+        /// </summary>
         public override void BuildForm()
         {
             base.BuildForm();
@@ -16,7 +18,7 @@ namespace ApplicationTest.Forms
             while (showForm)
             {
                 Console.WriteLine("**************Welcome to ATM Application Test**************");
-                Console.WriteLine($"\n\nLogged with: {Program.user.Name}\n\n");
+                Console.WriteLine($"\n\nLogged with: {Program.loggedUser.Name}\n\n");
                 Console.WriteLine("Please select an option");
                 Console.WriteLine("1. List all users");
                 Console.WriteLine("2. Create user");
@@ -69,7 +71,7 @@ namespace ApplicationTest.Forms
                         case 0:
                             {
                                 showForm = false;
-                                Program.user = null;
+                                Program.loggedUser = null;
                                 new InitialMenu().BuildForm();
                                 break;
                             }

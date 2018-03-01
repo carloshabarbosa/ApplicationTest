@@ -1,40 +1,24 @@
 ﻿using ApplicationTest.Data.Entities;
 using ApplicationTest.Forms;
-using ApplicationTeste.Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest
 {
+    /// <summary>
+    /// Start point of application
+    /// </summary>
     class Program
     {
-        private static string applicationName = "ATM Application Test";
-        public static User user;
+        /// <summary>
+        /// Variable responsible for stored the logged user
+        /// </summary>
+        public static User loggedUser;
+        /// <summary>
+        /// Main metho to start the application
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             new InitialMenu().BuildForm();
-
-            Console.ReadKey();
-        }
-
-        private static void ShowLoginForm()
-        {
-            Console.Clear();
-            try
-            {
-               
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            finally
-            {
-                
-            }
         }
     }
 }

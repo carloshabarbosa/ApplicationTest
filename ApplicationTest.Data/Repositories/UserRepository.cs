@@ -1,17 +1,21 @@
 ﻿using ApplicationTest.Data.Common;
 using ApplicationTest.Data.Entities;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest.Data.Repositories
 {
+    /// <summary>
+    /// Class responsible for persist the user
+    /// </summary>
     public class UserRepository
     {
+        #region Singleton
+        /// <summary>
+        /// Singleton implementation
+        /// </summary>
         private static UserRepository instance;
         public static UserRepository Instance
         {
@@ -26,6 +30,13 @@ namespace ApplicationTest.Data.Repositories
             }
         }
 
+        #endregion
+
+        #region PublicMethods
+        /// <summary>
+        /// Method responsible for retrieve the users
+        /// </summary>
+        /// <returns></returns>
         public List<User> GetUsers()
         {
             var path = GetUserDataFileName();
@@ -45,11 +56,15 @@ namespace ApplicationTest.Data.Repositories
             }
         }
 
+        /// <summary>
+        /// Method responsible for save all users
+        /// </summary>
+        /// <param name="users"></param>
         public void Save(List<User> users)
         {
             var path = GetUserDataFileName();
             FileUtils.ResetFile(path);
-            
+
             using (var file = File.CreateText(path))
             {
                 var jsonSerializer = new JsonSerializer();
@@ -62,12 +77,20 @@ namespace ApplicationTest.Data.Repositories
             }
         }
 
+        #endregion
+
+        #region PrivateMethods
+        /// <summary>
+        /// Method responsible to get a user file name
+        /// </summary>
+        /// <returns>The user filename</returns>
         private string GetUserDataFileName()
         {
             var path = FileUtils.GetDataPath();
             return $"{path}/user.json";
         }
 
-        
+        #endregion
+
     }
 }

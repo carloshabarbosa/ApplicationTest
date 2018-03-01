@@ -1,13 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest.Forms
 {
+    /// <summary>
+    /// Class responsible for build the initial menu
+    /// </summary>
     public class InitialMenu : BaseForm
     {
+        /// <summary>
+        /// Implementation of the abstract class for the initial menu form
+        /// </summary>
         public override void BuildForm()
         {
             base.BuildForm();

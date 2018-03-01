@@ -1,0 +1,2 @@
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:54:38
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:54:38

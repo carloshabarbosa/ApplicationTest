@@ -1,0 +1,9 @@
+C:\Sites\ApplicationTest\ApplicationTeste.Service\bin\Release\ApplicationTeste.Service.dll
+C:\Sites\ApplicationTest\ApplicationTeste.Service\bin\Release\ApplicationTeste.Service.pdb
+C:\Sites\ApplicationTest\ApplicationTeste.Service\bin\Release\ApplicationTest.Data.dll
+C:\Sites\ApplicationTest\ApplicationTeste.Service\bin\Release\Newtonsoft.Json.dll
+C:\Sites\ApplicationTest\ApplicationTeste.Service\bin\Release\ApplicationTest.Data.pdb
+C:\Sites\ApplicationTest\ApplicationTeste.Service\bin\Release\Newtonsoft.Json.xml
+C:\Sites\ApplicationTest\ApplicationTeste.Service\obj\Release\ApplicationTeste.Service.csprojResolveAssemblyReference.cache
+C:\Sites\ApplicationTest\ApplicationTeste.Service\obj\Release\ApplicationTeste.Service.dll
+C:\Sites\ApplicationTest\ApplicationTeste.Service\obj\Release\ApplicationTeste.Service.pdb

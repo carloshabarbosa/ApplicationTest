@@ -1,14 +1,16 @@
 ﻿using ApplicationTeste.Service.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest.Forms
 {
+    /// <summary>
+    /// Class responsible for build the login form
+    /// </summary>
     public class Login : BaseForm
     {
+        /// <summary>
+        /// Implementation of the abstract class for the login form
+        /// </summary>
         public override void BuildForm()
         {
             base.BuildForm();
@@ -20,8 +22,8 @@ namespace ApplicationTest.Forms
 
                 var userName = Console.ReadLine();
 
-                Program.user = UserService.Instance.AuthenticateUser(userName);
-                if (Program.user != null)
+                Program.loggedUser = UserService.Instance.AuthenticateUser(userName);
+                if (Program.loggedUser != null)
                 {
                     showLoginForm = false;
                     new MainMenu().BuildForm();

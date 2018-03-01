@@ -1,14 +1,17 @@
 ﻿using ApplicationTeste.Service.Services;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest.Forms
 {
+    /// <summary>
+    /// Class responsible for build the form that lists all users
+    /// </summary>
     public class AllUsers : BaseForm
     {
+        /// <summary>
+        /// Implementation of the abstract class for the all users list
+        /// </summary>
         public override void BuildForm()
         {
             base.BuildForm();

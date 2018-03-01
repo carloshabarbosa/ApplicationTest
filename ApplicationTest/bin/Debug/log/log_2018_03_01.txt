@@ -1,0 +1,16 @@
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:49:25
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:49:25
+ApplicationTeste.Service.Services.UserService: User: admin incorrect login at: 15:49:25
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:49:32
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:50:27
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:50:27
+ApplicationTeste.Service.Services.UserService: User: admin incorrect login at: 15:50:27
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:51:14
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:51:47
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:51:56
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:53:37
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:53:40
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:54:02
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:54:05
+ApplicationTeste.Service.Services.UserService: User: admin created at: 15:54:26
+ApplicationTeste.Service.Services.UserService: User: admin logged at: 15:54:26

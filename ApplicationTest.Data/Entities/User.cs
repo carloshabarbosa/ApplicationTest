@@ -1,14 +1,18 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationTest.Data.Entities
 {
+    /// <summary>
+    /// Entity User
+    /// </summary>
     public class User
     {
+        /// <summary>
+        /// Principal constructor
+        /// </summary>
+        /// <param name="id">User id</param>
+        /// <param name="userName">username</param>
+        /// <param name="initialBalance">value for initial balance</param>
         public User(int id, string userName, decimal initialBalance)
         {
             Name = userName;
@@ -19,6 +23,10 @@ namespace ApplicationTest.Data.Entities
         public string Name { get; set; }
         public Account Account { get; set; }
 
+        /// <summary>
+        /// Method responsible for user validate
+        /// </summary>
+        /// <returns>true if user is valid, false if not</returns>
         public bool IsValid()
         {
             if ((Id >= 1 && Id <= 99999) && !string.IsNullOrEmpty(Name))
@@ -28,6 +36,10 @@ namespace ApplicationTest.Data.Entities
             return false;
         }
 
+        /// <summary>
+        /// ToString override
+        /// </summary>
+        /// <returns>A formatted user string</returns>
         public override string ToString()
         {
             return JsonConvert.SerializeObject(this);
