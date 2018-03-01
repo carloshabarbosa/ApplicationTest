@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45A0F85D-91D8-47DD-B02D-C4BE893168F5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{8B0E8A2D-513E-4DBF-90AA-E74BC43E5F06}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ApplicationTest</RootNamespace>
-    <AssemblyName>ApplicationTest</AssemblyName>
+    <RootNamespace>ApplicationTest.Data</RootNamespace>
+    <AssemblyName>ApplicationTest.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,27 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\BaseForm.cs" />
-    <Compile Include="Forms\AllUsers.cs" />
-    <Compile Include="Forms\Login.cs" />
-    <Compile Include="Forms\InitialMenu.cs" />
-    <Compile Include="Forms\MainMenu.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Common\FileUtils.cs" />
+    <Compile Include="Entities\Account.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ApplicationTest.Data\ApplicationTest.Data.csproj">
-      <Project>{8B0E8A2D-513E-4DBF-90AA-E74BC43E5F06}</Project>
-      <Name>ApplicationTest.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ApplicationTeste.Service\ApplicationTeste.Service.csproj">
-      <Project>{471B9575-0DFC-4A68-8BC3-96477F926824}</Project>
-      <Name>ApplicationTeste.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
