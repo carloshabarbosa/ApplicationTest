@@ -47,11 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Balance.cs" />
     <Compile Include="Forms\BaseForm.cs" />
     <Compile Include="Forms\AllUsers.cs" />
+    <Compile Include="Forms\CreateUser.cs" />
+    <Compile Include="Forms\Deposit.cs" />
     <Compile Include="Forms\Login.cs" />
     <Compile Include="Forms\InitialMenu.cs" />
     <Compile Include="Forms\MainMenu.cs" />
+    <Compile Include="Forms\Withdraw.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

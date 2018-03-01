@@ -14,11 +14,11 @@ namespace ApplicationTest.Forms
             var showMainMenu = true;
             while (showMainMenu)
             {
-                Console.WriteLine("********Welcome to ATM Application Test**************\n");
+                Console.WriteLine("**************Welcome to ATM Application Test**************\n");
                 Console.WriteLine("Please select a option");
                 Console.WriteLine("1. Login with valid user ");
                 Console.WriteLine("0. Exit\n");
-                Console.WriteLine("******************************************************");
+                Console.WriteLine("************************************************************");
 
                 int option = 0;
                 if (int.TryParse(Console.ReadLine(), out option))
@@ -35,13 +35,24 @@ namespace ApplicationTest.Forms
                         case 0:
                             {
                                 showMainMenu = false;
+                                Environment.Exit(0);
                                 break;
                             }
                         default:
                             {
+                                Console.WriteLine("Invalid option!");
+                                FooterForm();
+                                Console.Clear();
                                 break;
                             }
                     }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid option!");
+                    FooterForm();
+                    Console.Clear();
+
                 }
             }
         }

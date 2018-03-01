@@ -5,3 +5,10 @@ C:\Projetos\ApplicationTest\ApplicationTest.Data\bin\Debug\Newtonsoft.Json.xml
 C:\Projetos\ApplicationTest\ApplicationTest.Data\obj\Debug\ApplicationTest.Data.csprojResolveAssemblyReference.cache
 C:\Projetos\ApplicationTest\ApplicationTest.Data\obj\Debug\ApplicationTest.Data.dll
 C:\Projetos\ApplicationTest\ApplicationTest.Data\obj\Debug\ApplicationTest.Data.pdb
+C:\Sites\ApplicationTest\ApplicationTest.Data\bin\Debug\ApplicationTest.Data.dll
+C:\Sites\ApplicationTest\ApplicationTest.Data\bin\Debug\ApplicationTest.Data.pdb
+C:\Sites\ApplicationTest\ApplicationTest.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Sites\ApplicationTest\ApplicationTest.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Sites\ApplicationTest\ApplicationTest.Data\obj\Debug\ApplicationTest.Data.csprojResolveAssemblyReference.cache
+C:\Sites\ApplicationTest\ApplicationTest.Data\obj\Debug\ApplicationTest.Data.dll
+C:\Sites\ApplicationTest\ApplicationTest.Data\obj\Debug\ApplicationTest.Data.pdb

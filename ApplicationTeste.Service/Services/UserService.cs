@@ -59,6 +59,11 @@ namespace ApplicationTeste.Service.Services
             }
         }
 
+        public User GetUserById(int userId)
+        {
+            return Users.FirstOrDefault(u => u.Id == userId);
+        }
+
         public void Save()
         {
             UserRepository.Instance.Save(Users);

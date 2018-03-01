@@ -23,9 +23,8 @@ namespace ApplicationTest.Forms
                 });
             }
             Console.WriteLine("\n");
-            Console.WriteLine("Press any key to return to main menu!");
-            Console.ReadKey();
 
+            FooterForm();
             new MainMenu().BuildForm();
         }
     }

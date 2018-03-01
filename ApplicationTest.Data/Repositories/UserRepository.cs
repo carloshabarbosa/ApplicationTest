@@ -55,15 +55,12 @@ namespace ApplicationTest.Data.Repositories
                 var jsonSerializer = new JsonSerializer();
                 jsonSerializer.Formatting = Formatting.Indented;
 
-                jsonSerializer.Serialize(file, users);
+                jsonSerializer.Serialize(file, users.OrderBy(e => e.Id));
 
                 file.Flush();
                 file.Close();
             }
         }
-
-
-
 
         private string GetUserDataFileName()
         {

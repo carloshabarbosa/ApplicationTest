@@ -16,7 +16,7 @@ namespace ApplicationTest.Forms
 
             while (showLoginForm)
             {
-                Console.WriteLine("ENTER WITH A VALID USER: ");
+                Console.WriteLine("Enter with a valid user: ");
 
                 var userName = Console.ReadLine();
 
